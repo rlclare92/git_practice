@@ -1,4 +1,4 @@
-#This is a practive file to learn how to pull, push, clone and branch using git commands 
+#Git how-to & gloassary of commands
 
 Cheatsheet Glossary 
 git clone [http address or hhs] -   will clone a copy to your local machine of the repo
