@@ -33,11 +33,47 @@ git checkout -b [what you are calling the branch, normal format is feature/ruth 
 
 git diff -  what chnages have been made, it compares to versions of the code i.e. master version compared to the branch version. 
 
-git push --set-upstream origin - i.e. The current branch feature/ruthBranch has no upstream branch.
+git push --set-upstream origin  -i.e. The current branch feature/ruthBranch has no upstream branch.
 To push the current branch and set the remote as upstream, use
 
     git push --set-upstream origin feature/ruthBranch
 
-git branch -d branch name- you can use this to dleete branches once they have been merge into the master branch, its uncommon to use the same branch more than once. Confirm this is standard wihtin the team before doing!!!
+git branch -d branch name   - you can use this to dleete branches once they have been merge into the master branch, its uncommon to use the same branch more than once. Confirm this is standard wihtin the team before doing!!!
 
-How to breakdowns
+git reset --hard    - will undo all LOCAL chnages
+
+
+How-To's 
+    Setup commits and add 
+        Process
+        
+Creating a new repo
+    Process
+
+Setting up new files/changes to the repo 
+    Process
+
+Branching- creating new branches
+    Process
+
+sharing a feature branch with local commits
+    Process
+        git checkout feature/ projectName
+        git pull                #Get the latest version from DevOps or github
+        git checkout branchName #Name of the branch to work on 
+
+        create/update code 
+
+        git add . or git add fileName 
+        git commit -m "what? why? reasons for chnages make this relevant and useful- do not use 'my chnages' or 'test fixed'"
+
+        git checkout feature/repoName 
+        git pull #Get the latest chnages from Team Members
+        git checkout teamMember branch #! Apply Team chnages BEFORE yours, i.e. Original + Team + Yours!!!
+                                    #Any problems/ conflicts will occur here
+        
+        git checkout feature/repo branch
+        git merge teamMeber branch #Merge YOUR changes onto the main feature branch- no risk 
+        git push
+
+
